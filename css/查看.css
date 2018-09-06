@@ -1,0 +1,114 @@
+/*
+* @Author: lenovo
+* @Date:   2018-09-06 15:19:58
+* @Last Modified by:   lenovo
+* @Last Modified time: 2018-09-06 18:32:56
+*/
+body{
+	background: rgb(51, 51, 51);
+}
+*{
+    	padding: 0;
+    	margin: 0;
+    	list-style: none;
+    	box-sizing: border-box;
+    }
+    .banner{
+    	width: 400px;
+    	height: 400px;
+    	margin: 70px auto 0;
+    	position: relative;
+    }
+    .imgs{
+    	width: 100%;
+    	height: 100%;
+    	position: relative;
+    	overflow: hidden;
+    }
+    .imgs img{
+    	display: block;
+    	width: 100%;
+    	height: 100%;
+    	position: absolute;
+    	top: 0;
+    	left: 1226px;
+    }
+    ul{
+    	width: 120px;
+    	height: 10px;
+    	position: absolute;
+    	bottom: 10px;
+    	left: 0;
+    	right: 0;
+    	margin: 0 auto;
+    	display: flex;
+    	justify-content: space-around;
+    }
+    ul li{
+    	width: 10px;
+    	height: 10px;
+    	border-radius: 50%;
+    	background: rgba(255, 255, 255, 0.5);
+    }
+    ul li.active{
+    	background: rgba(0, 0, 0, 0.5);
+    }
+    .leftBtn{
+    	width: 30px;
+    	height: 50px;
+    	background-image: url('../img/icon-slides.png');
+    	background-position: 77px -10px;
+    	position: absolute;
+    	left: 0;
+    	top: 0;
+    	bottom: 0;
+    	margin: auto 0;
+    }
+    .rightBtn{
+    	width: 30px;
+    	height: 50px;
+    	background-image: url('../img/icon-slides.png');
+    	background-position: 35px -10px;
+    	position: absolute;
+    	right: 0;
+    	top: 0;
+    	bottom: 0;
+    	margin: auto 0;
+    }
+    .leftBtn:hover{
+    	background-position: -5px -10px;
+    }
+    .rightBtn:hover{
+    	background-position: -49px -10px;
+    }
+.close{
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	line-height: 20px;
+	text-align: center;
+	color: #fff;
+	background: #000;
+	position: fixed;
+	top: 30px;
+	right: 30px;
+}
+.bot{
+	width: 80%;
+	height: 200px;
+	overflow: hidden;
+	margin: 40px auto 0;
+}
+.bot .one{
+	float: left;
+}
+.bot .two{
+	float: left;
+}
+.bot .three{
+	float: left;
+}
+.bot img{
+	width: 200px;
+	height: 200px;
+}

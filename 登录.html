@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/登录.css">
+</head>
+<body>
+
+        <div class="banner">
+            <div class="cover"></div>
+            <img src="img/7.png" alt="">
+        </div>
+	<main>
+		<h4>登录</h4>
+		<label for="">username</label>
+		<input type="text" placeholder="请输入您的用户名" class="name">
+		<label for="">password</label>
+		<input type="password" placeholder="请输入您的密码" class="word">
+		<button class="submit">提交</button>
+		<div class="close">×</div>
+	</main>
+</body>
+</html>
+<script>
+        window.onload=function(){
+        let user=document.getElementsByClassName("name")[0];
+        let word=document.getElementsByClassName("word")[0];
+        let btn=document.getElementsByClassName("submit")[0];
+        let close=document.getElementsByClassName("close")[0];
+        btn.onclick=function(){
+                if(user.value=="史蒂夫" && word.value=="12383"){
+                        alert("登录成功");
+                        window.open("首页.html");
+                }
+                else{
+                        window.open("error.html");
+                }
+        }
+        close.onclick=function(){
+                window.close();
+        }
+}
+</script>

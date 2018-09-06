@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/error.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="cover"></div>
+        <img src="img/7.png" alt="">
+    </div>
+	<main>
+		<h4>登录失败</h4>
+		<p><span>5</span>秒后返回登录页面</p>
+		<a href="登录.html">立即返回</a>
+	</main>
+</body>
+</html>
+<script>
+    window.onload=function(){
+    let span=document.getElementsByTagName("span")[0];
+    // 获取span标签中的内容
+    let num=span.innerHTML;
+    console.log(num);
+    // 创建时间间隔函数
+    var t=setInterval(fn,1000);
+    function fn(){
+        num--;
+        if(num==0){
+            // 清除时间函数
+            clearInterval(t);
+            // 跳转到登录重新登录
+            window.open("登录.html");
+        }
+        // 改变span中的数字
+        span.innerHTML=num;
+    }
+}
+</script>

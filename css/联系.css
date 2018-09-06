@@ -1,0 +1,123 @@
+/*
+* @Author: lenovo
+* @Date:   2018-08-29 08:36:56
+* @Last Modified by:   lenovo
+* @Last Modified time: 2018-09-06 14:31:01
+*/
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+i{
+	font-style: normal;
+}
+nav p{
+	display: none;
+	width: 100%;
+	height: 55px;	
+	border-bottom: 1px solid #fff;
+	padding:0 40px;
+	font-size: 16px;
+	background: #333;
+	color: #fff;
+	text-align: left;
+	line-height: 55px;
+}
+nav{
+	
+	width: 100%;
+	height: 55px;
+	background: #fff;
+	line-height: 55px;
+	text-align: center;
+}
+nav .one{
+	display: block;
+	border-bottom: none;
+}
+nav .close{
+    display: none;
+}
+.pic{
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+.pic img{
+	width: 100%;
+	height: 100%;
+}
+footer{
+	width: 100%;
+	padding-bottom: 100px;
+	padding-top: 100px;
+}
+footer p{
+	font-size: 26px;
+	color: #888;
+	text-align: center;
+}
+footer ul{
+	width: 175px;
+	display: block;
+	margin: 0 auto;
+}
+footer li{
+	width: 24px;
+	height: 24px;
+	margin: 0 5px;
+	border-radius: 50%;
+	background: #fff;
+	float: left;
+}
+footer li:nth-child(1){
+	background-image: url('../img/6.png');
+	background-position: -48px -48px;
+}
+footer li:nth-child(2){
+	background-image: url('../img/6.png');
+	background-position: -96px -48px;
+}
+footer li:nth-child(3){
+	background-image: url('../img/6.png');
+	background-position: 72px -48px;
+}
+footer li:nth-child(4){
+	background-image: url('../img/6.png');
+	background-position: 48px -48px;
+}
+footer li:nth-child(5){
+	background-image: url('../img/6.png');
+	background-position: 0 0;
+}
+@media screen and (min-width: 992px){
+	nav{
+        margin: 50px 0;
+    }
+    
+    nav p{
+	    height: 100%;
+	    background: #fff;
+	    color: #333;
+	    display: inline;
+    }
+    nav .one{
+    	display: inline;
+    }
+    footer{
+    	overflow: hidden;
+    }
+    .pic{
+    	margin-top: 0;
+    }
+}
+/* 大屏幕 col-lg- >1200px */
+@media screen and (min-width: 1200px){
+
+}

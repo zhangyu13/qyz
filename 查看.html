@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>Document</title>
+    <script src="animate.js"></script>
+	<script src="封装函数.js"></script>
+    <link rel="stylesheet" href="css/查看.css">
+</head>
+<body>
+    <div class="banner">
+    	<div class="imgs">
+    		<img src="img/11.jpg" alt="">
+    		<img src="img/12.jpg" alt="">
+    		<img src="img/13.jpg" alt="">
+    		<img src="img/14.jpg" alt="">
+    		<img src="img/15.jpg" alt="">
+    		<img src="img/16.jpg" alt="">
+    		<img src="img/17.jpg" alt="">
+    		<img src="img/18.jpg" alt="">
+    		<img src="img/19.jpg" alt="">
+    	</div>
+    	<ul>
+    		<li></li>
+    		<li></li>
+    		<li></li>
+    		<li></li>
+    		<li></li>
+    		<li></li>
+    		<li></li>
+    		<li></li>
+    		<li></li>
+    	</ul>
+    	<div class="leftBtn"></div>
+		<div class="rightBtn"></div>
+    </div>
+    <div class="bot">
+    	<div class="one">
+    		<img src="img/11.jpg" alt="">
+    		<img src="img/12.jpg" alt="">
+    		<img src="img/13.jpg" alt="">
+    		<img src="img/14.jpg" alt="">
+    		<img src="img/15.jpg" alt="">
+    		<img src="img/16.jpg" alt="">
+    		<img src="img/17.jpg" alt="">
+    		<img src="img/18.jpg" alt="">
+    		<img src="img/19.jpg" alt="">
+    	</div>
+    	<div class="two">
+    		<img src="img/11.jpg" alt="">
+    		<img src="img/12.jpg" alt="">
+    		<img src="img/13.jpg" alt="">
+    		<img src="img/14.jpg" alt="">
+    		<img src="img/15.jpg" alt="">
+    		<img src="img/16.jpg" alt="">
+    		<img src="img/17.jpg" alt="">
+    		<img src="img/18.jpg" alt="">
+    		<img src="img/19.jpg" alt="">
+    	</div>
+    	<div class="three">
+    		<img src="img/11.jpg" alt="">
+    		<img src="img/12.jpg" alt="">
+    		<img src="img/13.jpg" alt="">
+    		<img src="img/14.jpg" alt="">
+    		<img src="img/15.jpg" alt="">
+    		<img src="img/16.jpg" alt="">
+    		<img src="img/17.jpg" alt="">
+    		<img src="img/18.jpg" alt="">
+    		<img src="img/19.jpg" alt="">
+    	</div>
+    </div>
+<div class="close">×</div>
+<script>
+	let imgs=document.querySelectorAll(".banner img");
+	let dots=document.querySelectorAll("li");
+	let banner=document.querySelectorAll(".banner")[0];
+	let rightBtn=document.querySelectorAll(".rightBtn")[0];
+	let leftBtn=document.querySelectorAll(".leftBtn")[0];
+	let close=document.querySelector(".close");
+	console.log(imgs,dots,banner,rightBtn,leftBtn);
+	let widths=parseInt(getComputedStyle(imgs[0],null).width);
+    banner_oi(imgs,dots,banner,leftBtn,rightBtn,widths,"active",1000);
+    close.onclick=function(){
+    	window.close();
+    }
+</script>
+</body>
+</html>

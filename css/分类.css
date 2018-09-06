@@ -1,0 +1,134 @@
+/*
+* @Author: lenovo
+* @Date:   2018-09-06 14:43:17
+* @Last Modified by:   lenovo
+* @Last Modified time: 2018-09-06 23:04:44
+*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+nav p{
+	display: none;
+	width: 100%;
+	height: 55px;	
+	border-bottom: 1px solid #fff;
+	padding:0 40px;
+	font-size: 16px;
+	background: #333;
+	color: #fff;
+	text-align: left;
+	line-height: 55px;
+	cursor: pointer;
+}
+nav{
+	
+	width: 100%;
+	height: 55px;
+	background: #fff;
+	line-height: 55px;
+	text-align: center;
+}
+nav .one{
+	display: block;
+	border-bottom: none;
+}
+nav .close{
+    display: none;
+    cursor: pointer;
+}
+.center{
+	width: 100%;
+	margin: 0 auto;
+}
+.center ul li{
+	padding: 15px;
+}
+.center ul li p{
+	display: block;
+	padding: 20px 0 5px;
+	text-align: center;
+	font-size: 14px;
+	color: #888;
+}
+.center ul li img{
+	width: 100%;
+	height: auto;
+	cursor: pointer;
+}
+footer{
+	width: 100%;
+	padding-bottom: 100px;
+	padding-top: 100px;
+}
+footer p{
+	font-size: 26px;
+	color: #888;
+	text-align: center;
+}
+footer ul{
+	width: 175px;
+	display: block;
+	margin: 0 auto;
+}
+footer li{
+	width: 24px;
+	height: 24px;
+	margin: 0 5px;
+	border-radius: 50%;
+	background: #fff;
+	float: left;
+}
+footer li:nth-child(1){
+	background-image: url('../img/6.png');
+	background-position: -48px -48px;
+}
+footer li:nth-child(2){
+	background-image: url('../img/6.png');
+	background-position: -96px -48px;
+}
+footer li:nth-child(3){
+	background-image: url('../img/6.png');
+	background-position: 72px -48px;
+}
+footer li:nth-child(4){
+	background-image: url('../img/6.png');
+	background-position: 48px -48px;
+}
+footer li:nth-child(5){
+	background-image: url('../img/6.png');
+	background-position: 0 0;
+}
+@media screen and (min-width: 768px){
+    .center{
+    	width: 768px;
+    }
+}
+@media screen and (min-width: 992px){
+	nav{
+        margin: 50px 0;
+    }
+    .center{
+    	width: 992px;
+    }
+    nav p{
+	    height: 100%;
+	    background: #fff;
+	    color: #333;
+	    display: inline;
+    }
+    nav .one{
+    	display: inline;
+    }
+    footer{
+    	overflow: hidden;
+    }
+}
+/* 大屏幕 col-lg- >1200px */
+@media screen and (min-width: 1200px){
+    .center{
+    	width: 1000px;
+    }
+}

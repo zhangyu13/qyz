@@ -1,0 +1,18 @@
+/*
+* @Author: lenovo
+* @Date:   2018-08-13 09:08:10
+* @Last Modified by:   lenovo
+* @Last Modified time: 2018-08-13 09:10:29
+*/
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+i{
+	font-style: normal;
+}
