@@ -6,15 +6,37 @@
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/首页.css">
+	<script src="jquery-3.3.1.js"></script>
 </head>
 <body>
     <nav>
-        <div class="close">关闭</div>
+        <!-- <div class="close">关闭</div> -->
 		<a href="首页.html"><p class="one">首页</p></a>
 		<a href="作品.html"><p>作品</p></a>
 		<a href="日记.html"><p>日记</p></a>
 		<a href="联系.html"><p>联系</p></a>
 	</nav>
+	<div class="yc">首页</div>
+            <div class="xl">
+                <ul>
+                    <a href="首页.html"><p>首页</p></a>
+		            <a href="作品.html"><p>作品</p></a>
+		            <a href="日记.html"><p>日记</p></a>
+		            <a href="联系.html"><p>联系</p></a>
+                </ul>
+            </div>
+            <script>
+    let xl=$(".xl");
+    let dj=$(".yc");
+    console.log(xl,dj);
+    dj.click(function(){
+        xl.slideToggle(500);
+       let cur=$(this).text();
+        if(cur){
+            $(this).text(cur === '首页' ? '关闭' : '首页');
+        }
+    })
+            </script>
 	<div class="banner">
         <img src="img/7.png" alt="">
 	</div>
@@ -53,25 +75,42 @@
 				    <h4>藝術可遇不可求--它不會因為你是平民而對你視若無睹，也不會因為你是王公而對你青眼...</h4>
 				    <a href="">阅读正文</a>
 				</li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
+				<li>
+					<h2>博客日记#20</h2>
+				    <h6>发布日期：2016.07.04</h6>
+				    <h4>藝術可遇不可求--它不會因為你是平民而對你視若無睹，也不會因為你是王公而對你青眼...</h4>
+				    <a href="">阅读正文</a>
+				</li>
+				<li>
+					<h2>博客日记#20</h2>
+				    <h6>发布日期：2016.07.04</h6>
+				    <h4>藝術可遇不可求--它不會因為你是平民而對你視若無睹，也不會因為你是王公而對你青眼...</h4>
+				    <a href="">阅读正文</a>
+				</li>
+				<li>
+					<h2>博客日记#20</h2>
+				    <h6>发布日期：2016.07.04</h6>
+				    <h4>藝術可遇不可求--它不會因為你是平民而對你視若無睹，也不會因為你是王公而對你青眼...</h4>
+				    <a href="">阅读正文</a>
+				</li>
+				<li>
+					<h2>博客日记#20</h2>
+				    <h6>发布日期：2016.07.04</h6>
+				    <h4>藝術可遇不可求--它不會因為你是平民而對你視若無睹，也不會因為你是王公而對你青眼...</h4>
+				    <a href="">阅读正文</a>
+				</li>
+				<li>
+					<h2>博客日记#20</h2>
+				    <h6>发布日期：2016.07.04</h6>
+				    <h4>藝術可遇不可求--它不會因為你是平民而對你視若無睹，也不會因為你是王公而對你青眼...</h4>
+				    <a href="">阅读正文</a>
+				</li>
+				<li>
+					<h2>博客日记#20</h2>
+				    <h6>发布日期：2016.07.04</h6>
+				    <h4>藝術可遇不可求--它不會因為你是平民而對你視若無睹，也不會因為你是王公而對你青眼...</h4>
+				    <a href="">阅读正文</a>
+				</li>
 			</ul>
 		</div>
         <menu>
@@ -98,3 +137,15 @@
 	</footer>
 </body>
 </html>
+<script>
+	let fl=$(".fl");
+	let cd=$("menu .one");
+	console.log(fl,cd);
+    cd.click(function(){
+        fl.slideToggle(500);
+       let cur=$(this).text();
+        if(cur){
+            $(this).text(cur === '菜单' ? '关闭' : '菜单');
+        }
+    })
+</script>

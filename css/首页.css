@@ -2,7 +2,7 @@
 * @Author: lenovo
 * @Date:   2018-08-27 10:42:52
 * @Last Modified by:   lenovo
-* @Last Modified time: 2018-08-30 17:25:42
+* @Last Modified time: 2018-09-17 01:03:07
 */
 *{
 	padding: 0;
@@ -39,20 +39,46 @@ nav{
 	top: 0;
 	left: 0;
 	z-index: 999;
+	display: none;
 }
-nav .one{
+.yc{
+	    display: block;
+	    width: 100%;
+    	height: 55px;
+	    background: #333;
+	    color: #fff;
+	    text-align: center;
+	    line-height: 55px;
+	    position: fixed;
+	    top: 0;
+	    left: 0;
+	    z-index: 999;
+	    cursor: pointer;
+}
+.xl{
+	width: 100%;
+	display: none;
+	position: fixed;
+	    top: 55px;
+	    left:0;
+}
+.xl a{
 	display: block;
-	border-bottom: none;
+	    width: 100%;
+    	height: 55px;
+	    background: #333;
+	    color: #fff;
+	    text-align: center;
+	    line-height: 55px;
 }
-nav .close{
-    display: none;
+.xl ul{
+	margin: 0;
 }
 .banner{
 	width: 100%;
 	height: 710px;
 	background-image: url('../img/1.jpg');
 	background-size: cover;
-	margin-top: 55px;
 	overflow: hidden;
 }
 .banner img{
@@ -244,6 +270,7 @@ footer li:nth-child(5){
 @media screen and (min-width: 992px){
 	nav{
         box-shadow: 0 0 3px 1px #999;
+        display: inline;
     }
     
     nav p{
@@ -252,8 +279,8 @@ footer li:nth-child(5){
 	    color: #333;
 	    display: inline;
     }
-    nav .one{
-    	display: inline;
+    .yc,.xl{
+    	display: none;
     }
     .lp ul li{
     	margin-left: 0;
